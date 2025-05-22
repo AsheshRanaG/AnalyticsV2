@@ -5,16 +5,16 @@ import {
   ColorSchemeScript,
   mantineHtmlProps,
 } from "@mantine/core";
-import { theme } from "../theme";
+import { theme } from "@/theme";
 
 export const metadata = {
-  title: "Mantine Next.js template",
+  title: "Eclat Analytics",
   description: "I am using Mantine with Next.js!",
 };
 
-export default function RootLayout({ children }: { children: any }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang="en" {...mantineHtmlProps} suppressHydrationWarning>
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
